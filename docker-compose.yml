@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  assignment_1:
+    image: soen345ass1-image
+    container_name: soen345ass1-container
+    volumes:
+      - "./ass1_out_part_a:/root/ass1/out_part_a"
+      - "./ass1_out_part_b:/root/ass1/out_part_b"
+      - "./ass1_out_part_c:/root/ass1/out_part_c"
+      - "./ass1_out_part_d:/root/ass1/out_part_d"
+      - "./ass1_out_part_e:/root/ass1/out_part_e"
