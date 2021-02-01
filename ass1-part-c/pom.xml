@@ -301,6 +301,7 @@ file comparators, endian transformation classes, and much more.
     <commons.release.isDistModule>true</commons.release.isDistModule>
     <commons.releaseManagerName>Gary Gregory</commons.releaseManagerName>    
     <commons.releaseManagerKey>86fdc7e2a11262cb</commons.releaseManagerKey>
+    <jacoco.version>0.8.6</jacoco.version>
   </properties>
 
   <build>
@@ -308,6 +309,32 @@ file comparators, endian transformation classes, and much more.
     <defaultGoal>clean package apache-rat:check japicmp:cmp checkstyle:check javadoc:javadoc</defaultGoal>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco.version}</version>
+          <executions>
+            <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+            </execution>
+            <execution>
+            <id>post-unit-test</id>
+            <phase>test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+            <configuration>
+              <!--Sets the path to the file which contains the execution data.-->
+              <dataFile>target/jacoco.exec</dataFile>
+              <!--Sets the output directory for the code coverage report.-->
+              <outputDirectory>target/jacoco-ut</outputDirectory>
+            </configuration>
+            </execution>
+          </executions>
+        </plugin>
         <plugin>
           <groupId>org.apache.rat</groupId>
           <artifactId>apache-rat-plugin</artifactId>
