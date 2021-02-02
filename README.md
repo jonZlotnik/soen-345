@@ -1,6 +1,6 @@
-# soen-345
+# SOEN 345 - Software Testing
 
-## Assignment 1 Instructions
+## Assignment 1 Solution
 
 All commands to be run from root of this repository.
 
@@ -17,3 +17,5 @@ docker-compose up
    - `ass1_out_part_a/part_a/target/jacoco-ut/index.html`
    - `ass1_out_part_c/part_c/target/jacoco-ut/index.html`
    - `ass1_out_part_d/part_d/commons-io-2.8.0-src/target/site/clover/index.html`
+
+2. Compare reports from Part C and Part D.
