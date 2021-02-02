@@ -12,10 +12,10 @@ docker build -t soen345ass1-image -f Dockerfile .
 docker-compose up
 ```
 
-1. Review coverage reports by opening the following files in your browser:
+2. Review coverage reports by opening the following files in your browser:
 
    - `ass1_out_part_a/part_a/target/jacoco-ut/index.html`
    - `ass1_out_part_c/part_c/target/jacoco-ut/index.html`
    - `ass1_out_part_d/part_d/commons-io-2.8.0-src/target/site/clover/index.html`
 
-2. Compare reports from Part C and Part D.
+3. Compare reports from Part C and Part D.
