@@ -25,10 +25,14 @@ RUN mkdir -p ${USER_HOME_DIR}/ass1/part_b
 RUN cd ${USER_HOME_DIR}/ass1/part_b \
   && curl https://httpd-mirror.sergal.org/apache//commons/io/source/commons-io-2.8.0-src.tar.gz --output apache-commons.tar.gz \
   && tar -xf apache-commons.tar.gz \
-  && cd commons-io-2.8.0-src/ \
+  && rm ${USER_HOME_DIR}/ass1/part_b/commons-io-2.8.0-src/pom.xml
+
+COPY ass1-part-b/pom.xml ${USER_HOME_DIR}/ass1/part_b/commons-io-2.8.0-src/pom.xml
+
+RUN cd ${USER_HOME_DIR}/ass1/part_b/commons-io-2.8.0-src/ \
   && mvn clean \
-  && mvn compile 
-  # && mvn test ; echo "done part b"
+  && mvn compile \
+  && mvn test ; echo "done part b"
 
 
 # Experiments - Part C
