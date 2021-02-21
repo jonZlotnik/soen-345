@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  assignment_1:
+    image: soen345ass1-image
+    container_name: soen345ass1-container
+    volumes:
+      - "./out_part_a:/root/ass2/out_part_a"
