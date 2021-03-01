@@ -1,0 +1,214 @@
+{
+  "id": "d4d01b51-1686-4059-b486-e706a4d971a6",
+  "version": "2.0",
+  "name": "t4-selenium-tests",
+  "url": "https://www.google.ca/",
+  "tests": [{
+    "id": "9bd4a190-a2c7-4194-b580-c69ae40c46b2",
+    "name": "Test case 2",
+    "commands": [{
+      "id": "1cf78548-5543-4544-82ef-79211948c059",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "abd9e60b-3761-4db7-ac84-432b76dc7e6a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "518x439",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b1cf4f6-1354-4e90-b0f5-6995e61be86c",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bd0ca77-b05f-4041-837d-0be371bfdad3",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "arbitrary stuff"
+    }, {
+      "id": "ec7c87bc-eeca-412a-b92f-c2cddae4d989",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "af4bdeda-47f8-4d89-84a6-8d94201973b4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Images",
+      "targets": [
+        ["linkText=Images", "linkText"],
+        ["css=.hdtb-mitem:nth-child(2) > .hide-focus-ring", "css:finder"],
+        ["xpath=//a[contains(text(),'Images')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=arbitrary+stuff&sxsrf=ALeKk02kHZxcS9zP9m8USCsj9oMnsEb5Ow:1614537723161&source=lnms&tbm=isch&sa=X&ved=2ahUKEwilk9zbnY3vAhXMnuAKHbg5BX8Q_AUoAXoECAIQAw')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Images')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb37433e-1273-4952-b5cc-8892005e2578",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Shopping",
+      "targets": [
+        ["linkText=Shopping", "linkText"],
+        ["css=.hdtb-mitem:nth-child(3) > .hide-focus-ring", "css:finder"],
+        ["xpath=//a[contains(text(),'Shopping')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb']/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=arbitrary+stuff&sxsrf=ALeKk02kHZxcS9zP9m8USCsj9oMnsEb5Ow:1614537723161&source=lnms&tbm=shop&sa=X&ved=2ahUKEwilk9zbnY3vAhXMnuAKHbg5BX8Q_AUoAnoECAIQBA')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8847906-5a43-4de0-8d0f-9dc74ee12ac6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Videos",
+      "targets": [
+        ["linkText=Videos", "linkText"],
+        ["css=.hdtb-mitem:nth-child(4) > .hide-focus-ring", "css:finder"],
+        ["xpath=//a[contains(text(),'Videos')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb']/div/div/div[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=arbitrary+stuff&sxsrf=ALeKk02kHZxcS9zP9m8USCsj9oMnsEb5Ow:1614537723161&source=lnms&tbm=vid&sa=X&ved=2ahUKEwilk9zbnY3vAhXMnuAKHbg5BX8Q_AUoA3oECAIQBQ')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Videos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72cc7842-4279-4c31-99b3-99629a5e4d38",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=News",
+      "targets": [
+        ["linkText=News", "linkText"],
+        ["css=.hdtb-mitem:nth-child(5) > .hide-focus-ring", "css:finder"],
+        ["xpath=//a[contains(text(),'News')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb']/div/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=arbitrary+stuff&sxsrf=ALeKk02kHZxcS9zP9m8USCsj9oMnsEb5Ow:1614537723161&source=lnms&tbm=nws&sa=X&ved=2ahUKEwilk9zbnY3vAhXMnuAKHbg5BX8Q_AUoBHoECAIQBg')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/div[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'News')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44bb148b-6b2a-4cfd-9d2d-7ea08cd932ff",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=abar_button_opt",
+      "targets": [
+        ["id=abar_button_opt", "id"],
+        ["linkText=Settings", "linkText"],
+        ["css=#abar_button_opt", "css:finder"],
+        ["xpath=//a[contains(text(),'Settings')]", "xpath:link"],
+        ["xpath=//a[@id='abar_button_opt']", "xpath:attributes"],
+        ["xpath=//g-popup[@id='ow20']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/preferences')]", "xpath:href"],
+        ["xpath=//g-popup/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Settings')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a660517e-0860-4413-8c4d-7048854cc4b8",
+    "name": "Test case 3",
+    "commands": [{
+      "id": "7f886b8e-1f0e-4e7f-8d63-1fe75da725da",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Software_engineering",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d124733d-cb17-47ba-a8af-11a818ea300b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.page-actions-menu",
+      "targets": [
+        ["css=.mw-ui-icon-minerva-download", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//ul[@id='page-actions']/li[2]/button", "xpath:idRelative"],
+        ["xpath=//li[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Download PDF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cff8d083-7c8d-4d1d-8c1d-192ad1da659f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=ca-watch",
+      "targets": [
+        ["id=ca-watch", "id"],
+        ["linkText=Watch", "linkText"],
+        ["css=#ca-watch", "css:finder"],
+        ["xpath=//a[contains(text(),'Watch')]", "xpath:link"],
+        ["xpath=//a[@id='ca-watch']", "xpath:attributes"],
+        ["xpath=//li[@id='page-actions-watch']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/w/index.php?title=Special:UserLogin&returnto=Software+engineering')])[2]", "xpath:href"],
+        ["xpath=//nav/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watch')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "be1f6850-7bb9-4f5c-aff8-5482857913c2",
+    "name": "Test case 4",
+    "commands": [{
+      "id": "85cf012a-e9a8-424d-af2f-c0a2dc176135",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Software_engineering",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55760425-86a4-4524-818c-f3f716db4f80",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.page-actions-menu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d3b3be3-1ea9-441a-a41e-f3eebc277222",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "id=ca-watch",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "46a1c0fd-6341-41e2-9c72-522ce63cd4bb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9bd4a190-a2c7-4194-b580-c69ae40c46b2"]
+  }],
+  "urls": ["https://www.google.ca/", "https://en.m.wikipedia.org/wiki/Software_engineering", "https://en.m.wikipedia.org/", "https://en.wikipedia.org/"],
+  "plugins": []
+}
